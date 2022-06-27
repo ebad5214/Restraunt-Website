@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import About from './Components/About/About';
+import Awards from './Components/Awards/Awards';
 
 // import './App.css';
 import Home from './Components/Home/Home';
@@ -17,6 +18,9 @@ function App() {
       </Route>
       <Route path="/menu">
         <Menu />
+      </Route>
+      <Route path="/awards">
+        <Awards />
       </Route>
     </React.Fragment>
   );
