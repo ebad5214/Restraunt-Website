@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
@@ -18,19 +18,19 @@ const Navbar = () => {
         </div>
         <ul className="app_navbar-links">
             <li className="p__opensans">
-                <Link to="/home">Home</Link>
+                <NavLink activeClassName='active' to="/home">Home</NavLink>
             </li>
             <li className="p__opensans">
-                <Link to="/about">About</Link>
+                <NavLink activeClassName='active' to="/about">About</NavLink>
             </li>
             <li className="p__opensans">
-                <Link to="/menu">Menu</Link>
+                <NavLink activeClassName='active' to="/menu">Menu</NavLink>
             </li>
             <li className="p__opensans">
-                <Link to="/awards">Awards</Link>
+                <NavLink activeClassName='active' to="/awards">Awards</NavLink>
             </li>
             <li className="p__opensans">
-                <Link to="/contact">Contacts</Link>
+                <NavLink activeClassName='active' to="/contact">Contacts</NavLink>
             </li>
         </ul>
         <div className="app_navbar-login">
@@ -52,19 +52,19 @@ const Navbar = () => {
                 />
                 <ul className="app_navbar-smallscreen-links">
                     <li className="p__opensans">
-                        <Link to="/home">Home</Link>
+                        <NavLink to="/home">Home</NavLink>
                     </li>
                     <li className="p__opensans">
-                        <Link to="/about">About</Link>
+                        <NavLink to="/about">About</NavLink>
                     </li>
                     <li className="p__opensans">
-                        <Link to="/menu">Menu</Link>
+                        <NavLink to="/menu">Menu</NavLink>
                     </li>
                     <li className="p__opensans">
-                        <Link to="awards">Awards</Link>
+                        <NavLink to="awards">Awards</NavLink>
                     </li>
                     <li className="p__opensans">
-                        <Link to="/contact">Contacts</Link>
+                        <NavLink to="/contact">Contacts</NavLink>
                     </li>
                 </ul>
             </div>}

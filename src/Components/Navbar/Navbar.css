@@ -31,7 +31,9 @@
 
 }
 
-.app_navbar-links li:hover{
+.app_navbar-links li:hover,
+.app_navbar-links li:active
+.app_navbar-links li.active {
     color: var(--color-golden);
 }
 
