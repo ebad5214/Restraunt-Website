@@ -1,14 +1,14 @@
 import React from 'react'
-import Footer from '../Home/Footer/Footer'
-import Navbar from '../Home/Navbar/Navbar'
+// import Footer from '../Home/Footer/Footer'
+// import Navbar from '../Home/Navbar/Navbar'
 import Laurels from './Main/Laurels'
 
 const Awards = () => {
   return (
     <React.Fragment>
-        <Navbar />
+        {/* <Navbar /> */}
         <Laurels />
-        <Footer />
+        {/* <Footer /> */}
     </React.Fragment>
   )
 }

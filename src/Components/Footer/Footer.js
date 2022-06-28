@@ -2,7 +2,7 @@ import React from 'react'
 import { FiFacebook, FiTwitter, FiInstagram} from 'react-icons/fi'
 
 import NewsLetter from './NewsLetter'
-import { images } from '../../../Constants'
+import images  from '../../Constants/images'
 import './Footer.css'
 
 const Footer = () => {

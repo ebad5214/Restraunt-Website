@@ -1,14 +1,14 @@
 import React from 'react'
-import Footer from '../Home/Footer/Footer'
-import Navbar from '../Home/Navbar/Navbar'
+// import Footer from '../Home/Footer/Footer'
+// import Navbar from '../Home/Navbar/Navbar'
 import AboutUs from './Main/AboutUs'
 
 const About = () => {
   return (
     <React.Fragment>
-        <Navbar />
+        {/* <Navbar /> */}
         <AboutUs />
-        <Footer />
+        {/* <Footer /> */}
     </React.Fragment>
   )
 }

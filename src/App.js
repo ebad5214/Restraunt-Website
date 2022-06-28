@@ -6,6 +6,8 @@ import About from './Pages/About/About'
 import Menu from './Pages/Menu/Menu'
 import Awards from './Pages/Awards/Awards'
 import Contact from './Pages/Contacts/Contact'
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer'
 
 // import './App.css';
 
@@ -13,6 +15,8 @@ import Contact from './Pages/Contacts/Contact'
 function App() {
   return (
     <React.Fragment>
+      <Navbar />
+      <main>
       <Route path="/home">
         <Home />
       </Route>
@@ -28,6 +32,8 @@ function App() {
       <Route path="/contact">
        <Contact />
       </Route>
+      </main>
+      <Footer />
     </React.Fragment>
   );
 }
