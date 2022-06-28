@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
@@ -17,19 +18,19 @@ const Navbar = () => {
         </div>
         <ul className="app_navbar-links">
             <li className="p__opensans">
-                <a>Home</a>
+                <Link to="/home">Home</Link>
             </li>
             <li className="p__opensans">
-                <a>About</a>
+                <Link to="/about">About</Link>
             </li>
             <li className="p__opensans">
-                <a>Menu</a>
+                <Link to="/menu">Menu</Link>
             </li>
             <li className="p__opensans">
-                <a>Awards</a>
+                <Link to="/awards">Awards</Link>
             </li>
             <li className="p__opensans">
-                <a>Contacts</a>
+                <Link to="/contact">Contacts</Link>
             </li>
         </ul>
         <div className="app_navbar-login">
@@ -51,19 +52,19 @@ const Navbar = () => {
                 />
                 <ul className="app_navbar-smallscreen-links">
                     <li className="p__opensans">
-                        <a>Home</a>
+                        <Link to="/home">Home</Link>
                     </li>
                     <li className="p__opensans">
-                        <a>About</a>
+                        <Link to="/about">About</Link>
                     </li>
                     <li className="p__opensans">
-                        <a>Menu</a>
+                        <Link to="/menu">Menu</Link>
                     </li>
                     <li className="p__opensans">
-                        <a>Awards</a>
+                        <Link to="awards">Awards</Link>
                     </li>
                     <li className="p__opensans">
-                        <a>Contacts</a>
+                        <Link to="/contact">Contacts</Link>
                     </li>
                 </ul>
             </div>}
