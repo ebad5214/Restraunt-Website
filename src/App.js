@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import About from './Components/About/About';
 import Awards from './Components/Awards/Awards';
+import Contact from './Components/Contacts/Contact';
 
 // import './App.css';
 import Home from './Components/Home/Home';
@@ -21,6 +22,9 @@ function App() {
       </Route>
       <Route path="/awards">
         <Awards />
+      </Route>
+      <Route path="/contact">
+       <Contact />
       </Route>
     </React.Fragment>
   );
