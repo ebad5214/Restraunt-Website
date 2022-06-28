@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SubHeading from '../../Store/SubHeading/SubHeading'
+import SubHeading from '../../../Components/Store/SubHeading/SubHeading'
 import './NewsLetter.css'
 
 const NewsLetter = () => {

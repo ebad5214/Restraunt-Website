@@ -1,12 +1,14 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import About from './Components/About/About';
-import Awards from './Components/Awards/Awards';
-import Contact from './Components/Contacts/Contact';
+
+import Home from './Pages/Home/Home'
+import About from './Pages/About/About'
+import Menu from './Pages/Menu/Menu'
+import Awards from './Pages/Awards/Awards'
+import Contact from './Pages/Contacts/Contact'
 
 // import './App.css';
-import Home from './Components/Home/Home';
-import Menu from './Components/Menu/Menu';
+
 
 function App() {
   return (

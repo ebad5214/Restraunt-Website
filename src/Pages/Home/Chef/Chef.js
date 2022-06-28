@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { images } from '../../../Constants'
-import SubHeading from '../../Store/SubHeading/SubHeading'
+import SubHeading from '../../../Components/Store/SubHeading/SubHeading'
 import './Chef.css'
 
 const Chef = () => {
