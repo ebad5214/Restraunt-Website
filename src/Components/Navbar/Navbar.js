@@ -34,13 +34,11 @@ const Navbar = () => {
             </li>
         </ul>
         <div className="app_navbar-login">
-            <a href="/" className="p__opensans">
-                Log In / Register
-            </a>
+            <NavLink className="p__opensans" to="/login">Reister</NavLink>
             <div />
-            <a href="/" className="p__opensans">
+            <NavLink  className="p__opensans" to="/booking">
                 Book Table
-            </a>
+            </NavLink>
         </div>
         <div className="app_navbar-smallscreen">
             <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
