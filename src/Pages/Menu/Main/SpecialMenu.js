@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 
 import { images } from '../../../Constants'
 import data from '../../../Constants/data'
@@ -7,6 +8,9 @@ import Items from '../MenuItems/Items'
 import './SpecialMenu.css'
 
 const SpecialMenu = () => {
+
+  const more = useHistory()
+
   return (
     <div className="app__specialMenu flex__center section__padding" id="menu">
     <div className="app__specialMenu-title">
@@ -38,7 +42,7 @@ const SpecialMenu = () => {
       </div>
     </div>
     <div style={{marginTop: '15px'}}>
-      <button type="button" className="custom__button">View More</button>
+      <button type="button" className="custom__button" onClick={() => {more.push('/more')}}>View More</button>
     </div>
   </div>
   )

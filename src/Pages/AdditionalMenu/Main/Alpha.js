@@ -267,7 +267,7 @@ const Alpha = () => {
               <img src={images.ShahiPulao} alt="Biryani" />
               <div className="details">
                 <div className="details-sub">
-                  <h5>Zafrani Pulao</h5>
+                  <h5>Shahi Pulao</h5>
                   <h5 className="price">&#8377; 200</h5>
                   <p>
                     (Is prepared a Royal rice preparation which is cooked with
