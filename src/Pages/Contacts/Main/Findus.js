@@ -1,9 +1,13 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import SubHeading from "../../../Components/Store/SubHeading/SubHeading";
 import { images } from "../../../Constants";
 
 const Findus = () => {
+
+  const visit = useHistory()
+
   return (
     <div className="app__bg app__wrapper section__padding" id="contact">
       <div className="app__wrapper_info">
@@ -25,7 +29,9 @@ const Findus = () => {
           <p className="p__opensans">Mon - Fri: 10:00 aM - 2:00 aM</p>
           <p className="p__opensans">Sat - Sun: 09:30 aM - 3:00 aM</p>
         </div>
-        <button className="custom__button" style={{ marginTop: "2rem" }}>
+        <button className="custom__button" style={{ marginTop: "2rem" }} onClick = {() => {
+          visit.push('/booking')
+        }}>
           Visit Us
         </button>
       </div>

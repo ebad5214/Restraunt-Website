@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
@@ -18,27 +18,27 @@ const Navbar = () => {
         </div>
         <ul className="app_navbar-links">
             <li className="p__opensans">
-                <NavLink activeClassName='active' to="/home">Home</NavLink>
+                <Link  to="/home">Home</Link>
             </li>
             <li className="p__opensans">
-                <NavLink activeClassName='active' to="/about">About</NavLink>
+                <Link  to="/about">About</Link>
             </li>
             <li className="p__opensans">
-                <NavLink activeClassName='active' to="/menu">Menu</NavLink>
+                <Link  to="/menu">Menu</Link>
             </li>
             <li className="p__opensans">
-                <NavLink activeClassName='active' to="/awards">Awards</NavLink>
+                <Link  to="/awards">Awards</Link>
             </li>
             <li className="p__opensans">
-                <NavLink activeClassName='active' to="/contact">Contacts</NavLink>
+                <Link  to="/contact">Contacts</Link>
             </li>
         </ul>
         <div className="app_navbar-login">
-            <NavLink className="p__opensans" to="/login">Reister</NavLink>
+            <Link className="p__opensans" to="/login">Reister</Link>
             <div />
-            <NavLink  className="p__opensans" to="/booking">
+            <Link  className="p__opensans" to="/booking">
                 Book Table
-            </NavLink>
+            </Link>
         </div>
         <div className="app_navbar-smallscreen">
             <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
@@ -50,19 +50,19 @@ const Navbar = () => {
                 />
                 <ul className="app_navbar-smallscreen-links">
                     <li className="p__opensans">
-                        <NavLink to="/home">Home</NavLink>
+                        <Link to="/home">Home</Link>
                     </li>
                     <li className="p__opensans">
-                        <NavLink to="/about">About</NavLink>
+                        <Link to="/about">About</Link>
                     </li>
                     <li className="p__opensans">
-                        <NavLink to="/menu">Menu</NavLink>
+                        <Link to="/menu">Menu</Link>
                     </li>
                     <li className="p__opensans">
-                        <NavLink to="awards">Awards</NavLink>
+                        <Link to="awards">Awards</Link>
                     </li>
                     <li className="p__opensans">
-                        <NavLink to="/contact">Contacts</NavLink>
+                        <Link to="/contact">Contacts</Link>
                     </li>
                 </ul>
             </div>}

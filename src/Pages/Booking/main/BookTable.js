@@ -100,11 +100,10 @@ const BookTable = (props) => {
       
       <section>
         <div className="container">
-          
+          <p className='headtext__cormorant' style={{background: 'black', paddingLeft: '5.4rem', fontSize: '2rem'}}>We would be glad to reserve a table for you at our restaurant!</p>
           <form action="submit" name="myForm" onSubmit={formSubmitHandler} style={{marginBottom: '3rem'}}>
             <div className="Box rounded border ">
               <h2 className="ms-4 mt-3" style={{color: 'white'}}>Table Reservation</h2>
-              <h4 className="ms-4 mt-3" style={{color: 'var(--color-golden)'}}>We would be glad to reserve a table for you at our restaurant!</h4>
               <div className="mb-3 mt-3 ms-4 me-4">
                 <label
                   htmlFor="name"

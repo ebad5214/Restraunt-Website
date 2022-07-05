@@ -11,6 +11,7 @@ import Footer from "./Components/Footer/Footer";
 import Register from "./Pages/Login/Register";
 import Booking from "./Pages/Booking/Booking";
 
+
 // import './App.css';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/booking">
             <Booking />
           </Route>
+          
         </Switch>
       </main>
       <Footer />

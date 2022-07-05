@@ -119,7 +119,7 @@ const Login = (props) => {
             
             <form action="submit" name="myForm" onSubmit={formSubmitHandler} style={{marginBottom: '3rem'}}>
               <div className="Box rounded border ">
-                <h2 className="ms-4 mt-3" style={{color: 'white'}}>Create Account</h2>
+                <h2 className="ms-4 mt-3" style={{color: 'white', fontFamily: 'var(--font-base)'}}>Create Account</h2>
                 <div className="mb-3 mt-3 ms-4 me-4">
                   <label
                     htmlFor="name"
@@ -270,17 +270,14 @@ const Login = (props) => {
                 <div className="ms-3 text-muted">
                   <p>
                     By creating an account or logging in, you agree to{" "}
-                    <a href="/"> Term's and Conditions </a> of use and{" "}
-                    <a href="/">Privacy Policy</a>.
+                    <a href="/" style={{color: 'blue'}}> Term's and Conditions </a> of use and{" "}
+                    <a href="/" style={{color: 'blue'}}>Privacy Policy</a>.
                   </p>
                 </div>
                 <hr className="dotted" />
                 <div className="ms-3" style={{color: 'blue'}}>
                   <p>
                     Already have an account? <a href="/" style={{color: 'green'}}>Sign in</a>
-                    <br />
-                    Buying for work?{" "}
-                    <a href="/" style={{color: 'green'}}>Create a free business account</a>
                   </p>
                 </div>
               </div>
