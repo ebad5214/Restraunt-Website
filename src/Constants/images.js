@@ -30,6 +30,17 @@ import LkoBiryani from "../Assets/LkoBiryani.jpg"
 import Roghan from "../Assets/Roghan.jpg"
 import DoPyaza from "../Assets/DoPyaza.jpg"
 import ButterChicken from "../Assets/ButterChicken.jpg"
+import HydBiryani from "../Assets/HydBiryani.jpg"
+import MrdBiryani from "../Assets/MrdBiryani.jpg"
+import Pulao from "../Assets/Pulao.jpg"
+import ZafraniPulao from "../Assets/ZafraniPulao.jpg"
+import ShahiPulao from "../Assets/ShahiPulao.jpg"
+import Rumali from "../Assets/Rumali.jpg"
+import UltaTawaParatha from "../Assets/UltaTawaParatha.jpg"
+import WarqiParatha from "../Assets/WarqiParatha.jpg"
+import TandooriRoti from "../Assets/TandooriRoti.jpg"
+import KhameeriRoti from "../Assets/KhameeriRoti.jpg"
+import Taaftan from "../Assets/Taaftan.jpg"
 
 export default {
   bg,
@@ -63,5 +74,16 @@ export default {
   LkoBiryani,
   Roghan,
   DoPyaza,
-  ButterChicken
+  ButterChicken,
+  HydBiryani,
+  MrdBiryani,
+  Pulao,
+  ZafraniPulao,
+  ShahiPulao,
+  Rumali,
+  UltaTawaParatha,
+  WarqiParatha,
+  TandooriRoti,
+  KhameeriRoti,
+  Taaftan
 };
