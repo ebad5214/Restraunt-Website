@@ -20,6 +20,16 @@ import award05 from "../Assets/award05.png";
 import sign from "../Assets/sign.png";
 import quote from "../Assets/quote.png";
 import Ebad from "../Assets/Ebad.png";
+import Mutton from "../Assets/Mutton.jpg"
+import Nihari from "../Assets/Nihari.jpg"
+import Murgh from "../Assets/Murgh.jpg"
+import KandanMurgh from "../Assets/KandanMurgh.jpg"
+import Afghani from "../Assets/Afghani.jpg"
+import Changezi from "../Assets/Changezi.jpg"
+import LkoBiryani from "../Assets/LkoBiryani.jpg"
+import Roghan from "../Assets/Roghan.jpg"
+import DoPyaza from "../Assets/DoPyaza.jpg"
+import ButterChicken from "../Assets/ButterChicken.jpg"
 
 export default {
   bg,
@@ -44,4 +54,14 @@ export default {
   sign,
   quote,
   Ebad,
+  Mutton,
+  Nihari,
+  Murgh,
+  KandanMurgh,
+  Afghani,
+  Changezi,
+  LkoBiryani,
+  Roghan,
+  DoPyaza,
+  ButterChicken
 };

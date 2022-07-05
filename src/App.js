@@ -10,6 +10,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Register from "./Pages/Login/Register";
 import Booking from "./Pages/Booking/Booking";
+import AdditionalMenu from "./Pages/AdditionalMenu/AdditionalMenu";
 
 
 // import './App.css';
@@ -44,7 +45,9 @@ function App() {
           <Route path="/booking">
             <Booking />
           </Route>
-          
+          <Route path="/more">
+           <AdditionalMenu />
+          </Route>
         </Switch>
       </main>
       <Footer />
