@@ -1,7 +1,7 @@
 import React from 'react'
 import Login from './main/Login'
 
-// import './Register.css'
+
 
 const Register = () => {
   return (
