@@ -34,6 +34,7 @@ const Navbar = () => {
             </li>
         </ul>
         <div className="app_navbar-login">
+            <Link className="p__opensans" to="/*">Cart</Link>
             <Link className="p__opensans" to="/login">Reister</Link>
             <div />
             <Link  className="p__opensans" to="/booking">
