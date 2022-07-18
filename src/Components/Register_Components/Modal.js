@@ -14,17 +14,17 @@ const Modal = (props) => {
      overflow: 'hidden',
      left: 'calc(50% - 20rem)',
      width: '40rem',
-     border: '.5px solid grey'
+     border: '.5px solid var(--color-golden)'
     },
  
     {
-     background: '#4f005f',
+     background: 'var(--color-black)',
      padding: '1rem'
     },
  
     {
      margin: '0',
-     color: 'white'
+     color: 'var(--color-golden)'
     },
     {
      padding: '1rem',
@@ -47,10 +47,10 @@ const Modal = (props) => {
     <div>
       <div style={Style[4]} onClick={props.onConfirm} />
       <div style={Style[0]}>
-        <header style={Style[1]}>
+        <header className="headtext__cormorant" style={Style[1]}>
           <h2 style={Style[2]}>{props.title}</h2>
         </header>
-        <div style={{ padding: "1rem", color: "white" }}>
+        <div className="p__opensans" style={{ padding: "1rem", color: "red" }}>
           <p>{props.message}</p>
         </div>
         <footer style={Style[3]}>
