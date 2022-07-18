@@ -6,102 +6,121 @@ import Modal from "../../../Components/Register_Components/Modal";
 import "./Login.css";
 
 const Login = (props) => {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordAgain, setPasswordAgain] = useState("");
+  const [female, setFemale] = useState("");
+  const [male, setMale] = useState("");
+  const [other, setOther] = useState("");
+  const [error, setError] = useState();
 
-    const [name, setName] = useState('')
-    const [number, setNumber] = useState('')
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    const [passwordAgain, setPasswordAgain] = useState('')
-    const [female, setFemale] = useState('')
-    const [male, setMale] = useState('')
-    const [other, setOther] = useState('')
-    const [error, setError] = useState();
+  const errorHandler = () => {
+    setError(null);
+  };
 
-    const errorHandler = () => {
-        setError(null);
-    }
-
-    const formSubmitHandler = event => {
-       event.preventDefault();
-       if(name.trim().length === 0){
-           setError({
-               title: "This field can't be empty",
-               message: "Please Enter your Name !"
-           })
-           return;
-       }
-       if(email.trim().length === 0){
-           setError({
-            title: "This field can't be empty",
-            message: "Please Enter your e-Mail !"
-           })
-           return;
-       }
-       if(number.length === 0){
-           setError({
-            title: "This field can't be empty",
-            message: "Please Enter your Mobile Number !"
-           })
-           return;
-       }else if(number.length > 10){
-           setError({
-               title: "Invalid Input",
-               message: "Mobile number cannot exceed more than 10 Character !"
-           })
-           return;
-       }
-       if(password.length < 6){
-           setError({
-               title: "Invalid Input",
-               message: "Password cannot be less than 6 Character !"
-           })
-           return;
-       }
-       if(password !== passwordAgain){
-           setError({
-               title: "Password dose not Matched",
-               message: "password must be same as Above !"
-           })
-           return;
-       }
-       console.log(name,number,email,password,passwordAgain,female,male,other)
-        props.onAddUser(name,number,email,password,passwordAgain,female,male,other)
-    
-       setName("")
-       setNumber("")
-       setEmail("")
-       setPassword("");
-       setPasswordAgain("")
-       setFemale("")
-       setMale("")
-       setOther("")
-    }
-     
-    const inputName = event => {
-        setName(event.target.value)
-    }
-    const inputNumber = event => {
-        setNumber(event.target.value)
-    }
-    const inputEmail = event => {
-        setEmail(event.target.value)
-    }
-    const inputPassword = event => {
-        setPassword(event.target.value)
-    }
-    const inputPasswordAgain = event => {
-        setPasswordAgain(event.target.value)
-    }
-    const inputFemale = event => {
-        setFemale(event.target.value)
-    }
-    const inputMale = event => {
-        setMale(event.target.value)
-    }
-    const inputOther = event => {
-        setOther(event.target.value)
+  const formSubmitHandler = (event) => {
+    event.preventDefault();
+    if (name.trim().length === 0) {
+      setError({
+        title: "This field can't be empty",
+        message: "Please Enter your Name !",
+      });
+      return;
     }
 
+    if (number.length === 0) {
+      setError({
+        title: "This field can't be empty",
+        message: "Please Enter your Mobile Number !",
+      });
+      return;
+    } else if (number.length > 10 || number.length < 10) {
+      setError({
+        title: "Invalid Input",
+        message: "Mobile number is invalid",
+      });
+      return;
+    }
+
+    if (email.trim().length === 0) {
+      setError({
+        title: "This field can't be empty",
+        message: "Please Enter your e-Mail !",
+      });
+      return;
+    }
+
+    if (password.length < 6) {
+      setError({
+        title: "Invalid Input",
+        message: "Password cannot be less than 6 Character !",
+      });
+      return;
+    }
+    if (password !== passwordAgain) {
+      setError({
+        title: "Password dose not Matched",
+        message: "password must be same as Above !",
+      });
+      return;
+    }
+    console.log(
+      name,
+      number,
+      email,
+      password,
+      passwordAgain,
+      female,
+      male,
+      other
+    );
+    props.onAddUser(
+      name,
+      number,
+      email,
+      password,
+      passwordAgain,
+      female,
+      male,
+      other
+    );
+
+    setName("");
+    setNumber("");
+    setEmail("");
+    setPassword("");
+    setPasswordAgain("");
+    setFemale("");
+    setMale("");
+    setOther("");
+  };
+
+  const inputName = (event) => {
+    setName(event.target.value);
+  };
+  const inputNumber = (event) => {
+    setNumber(event.target.value);
+  };
+  const inputEmail = (event) => {
+    setEmail(event.target.value);
+  };
+  const inputPassword = (event) => {
+    setPassword(event.target.value);
+  };
+  const inputPasswordAgain = (event) => {
+    setPasswordAgain(event.target.value);
+  };
+  const inputFemale = (event) => {
+    setFemale(event.target.value);
+  };
+  const inputMale = (event) => {
+    setMale(event.target.value);
+  };
+  const inputOther = (event) => {
+    setOther(event.target.value);
+  };
 
   return (
     <div className="app__bg app__wrapper">
@@ -113,18 +132,26 @@ const Login = (props) => {
         />
       )}
       <div className="container-fluid">
-        
         <section>
           <div className="container">
-            
-            <form action="submit" name="myForm" onSubmit={formSubmitHandler} style={{marginBottom: '3rem'}}>
+            <form
+              action="submit"
+              name="myForm"
+              onSubmit={formSubmitHandler}
+              style={{ marginBottom: "3rem" }}
+            >
               <div className="Box rounded border ">
-                <h2 className="ms-4 mt-3" style={{color: 'white', fontFamily: 'var(--font-base)'}}>Create Account</h2>
+                <h2
+                  className="ms-4 mt-3"
+                  style={{ color: "white", fontFamily: "var(--font-base)" }}
+                >
+                  Create Account
+                </h2>
                 <div className="mb-3 mt-3 ms-4 me-4">
                   <label
                     htmlFor="name"
                     className="form-label font-weight-normal"
-                    style={{color: 'var(--color-golden)'}}
+                    style={{ color: "var(--color-golden)" }}
                   >
                     Enter Your Name
                   </label>
@@ -142,7 +169,7 @@ const Login = (props) => {
                   <label
                     htmlFor="mobilenumber"
                     className="form-label font-weight-normal"
-                    style={{color: 'var(--color-golden)'}}
+                    style={{ color: "var(--color-golden)" }}
                   >
                     Enter Your Mobile Number
                   </label>
@@ -160,7 +187,7 @@ const Login = (props) => {
                   <label
                     htmlFor="email"
                     className="form-label font-weight-normal"
-                    style={{color: 'var(--color-golden)'}}
+                    style={{ color: "var(--color-golden)" }}
                   >
                     Enter Your e-Mail ID
                   </label>
@@ -178,7 +205,7 @@ const Login = (props) => {
                   <label
                     htmlFor="password"
                     className="form-label font-weight-normal"
-                    style={{color: 'var(--color-golden)'}}
+                    style={{ color: "var(--color-golden)" }}
                   >
                     Create Your Password
                   </label>
@@ -204,7 +231,7 @@ const Login = (props) => {
                   <label
                     htmlFor="passwordagain"
                     className="form-label font-weight-normal"
-                    style={{color: 'var(--color-golden)'}}
+                    style={{ color: "var(--color-golden)" }}
                   >
                     Enter Password Again
                   </label>
@@ -219,7 +246,10 @@ const Login = (props) => {
                   />
                 </div>
                 <fieldset className="col-auto mb-3 mt-3 ms-4 me-4">
-                  <legend className="col-form-label col-sm-2 pt-0" style={{color: 'white'}}>
+                  <legend
+                    className="col-form-label col-sm-2 pt-0"
+                    style={{ color: "white" }}
+                  >
                     Gender
                   </legend>
                   <div className="col-sm-10">
@@ -232,7 +262,11 @@ const Login = (props) => {
                         value={"Female"}
                         onChange={inputFemale}
                       />
-                      <label className="form-check-label" htmlFor="female" style={{color: 'var(--color-golden)'}}>
+                      <label
+                        className="form-check-label"
+                        htmlFor="female"
+                        style={{ color: "var(--color-golden)" }}
+                      >
                         Female
                       </label>
                     </div>
@@ -245,7 +279,11 @@ const Login = (props) => {
                         value={"Male"}
                         onChange={inputMale}
                       />
-                      <label className="form-check-label" htmlFor="male" style={{color: 'var(--color-golden)'}}>
+                      <label
+                        className="form-check-label"
+                        htmlFor="male"
+                        style={{ color: "var(--color-golden)" }}
+                      >
                         Male
                       </label>
                     </div>
@@ -258,7 +296,11 @@ const Login = (props) => {
                         value={"Other"}
                         onChange={inputOther}
                       />
-                      <label className="form-check-label" htmlFor="Other" style={{color: 'var(--color-golden)'}}>
+                      <label
+                        className="form-check-label"
+                        htmlFor="Other"
+                        style={{ color: "var(--color-golden)" }}
+                      >
                         Other
                       </label>
                     </div>
@@ -270,14 +312,24 @@ const Login = (props) => {
                 <div className="ms-3 text-muted">
                   <p>
                     By creating an account or logging in, you agree to{" "}
-                    <a href="/" style={{color: 'blue'}}> Term's and Conditions </a> of use and{" "}
-                    <a href="/" style={{color: 'blue'}}>Privacy Policy</a>.
+                    <a href="/" style={{ color: "blue" }}>
+                      {" "}
+                      Term's and Conditions{" "}
+                    </a>{" "}
+                    of use and{" "}
+                    <a href="/" style={{ color: "blue" }}>
+                      Privacy Policy
+                    </a>
+                    .
                   </p>
                 </div>
                 <hr className="dotted" />
-                <div className="ms-3" style={{color: 'blue'}}>
+                <div className="ms-3" style={{ color: "blue" }}>
                   <p>
-                    Already have an account? <a href="/" style={{color: 'green'}}>Sign in</a>
+                    Already have an account?{" "}
+                    <a href="/" style={{ color: "green" }}>
+                      Sign in
+                    </a>
                   </p>
                 </div>
               </div>
