@@ -20,29 +20,29 @@ import award05 from "../Assets/award05.png";
 import sign from "../Assets/sign.png";
 import quote from "../Assets/quote.png";
 import Ebad from "../Assets/Ebad.png";
-import Mutton from "../Assets/Mutton.jpg"
-import Nihari from "../Assets/Nihari.jpg"
-import Murgh from "../Assets/Murgh.jpg"
-import KandanMurgh from "../Assets/KandanMurgh.jpg"
-import Afghani from "../Assets/Afghani.jpg"
-import Changezi from "../Assets/Changezi.jpg"
-import LkoBiryani from "../Assets/LkoBiryani.jpg"
-import Roghan from "../Assets/Roghan.jpg"
-import DoPyaza from "../Assets/DoPyaza.jpg"
-import ButterChicken from "../Assets/ButterChicken.jpg"
-import HydBiryani from "../Assets/HydBiryani.jpg"
-import MrdBiryani from "../Assets/MrdBiryani.jpg"
-import Pulao from "../Assets/Pulao.jpg"
-import ZafraniPulao from "../Assets/ZafraniPulao.jpg"
-import ShahiPulao from "../Assets/ShahiPulao.jpg"
-import Rumali from "../Assets/Rumali.jpg"
-import UltaTawaParatha from "../Assets/UltaTawaParatha.jpg"
-import WarqiParatha from "../Assets/WarqiParatha.jpg"
-import TandooriRoti from "../Assets/TandooriRoti.jpg"
-import KhameeriRoti from "../Assets/KhameeriRoti.jpg"
-import Taaftan from "../Assets/Taaftan.jpg"
+import Mutton from "../Assets/Mutton.jpg";
+import Nihari from "../Assets/Nihari.jpg";
+import Murgh from "../Assets/Murgh.jpg";
+import KandanMurgh from "../Assets/KandanMurgh.jpg";
+import Afghani from "../Assets/Afghani.jpg";
+import Changezi from "../Assets/Changezi.jpg";
+import LkoBiryani from "../Assets/LkoBiryani.jpg";
+import Roghan from "../Assets/Roghan.jpg";
+import DoPyaza from "../Assets/DoPyaza.jpg";
+import ButterChicken from "../Assets/ButterChicken.jpg";
+import HydBiryani from "../Assets/HydBiryani.jpg";
+import MrdBiryani from "../Assets/MrdBiryani.jpg";
+import Pulao from "../Assets/Pulao.jpg";
+import ZafraniPulao from "../Assets/ZafraniPulao.jpg";
+import ShahiPulao from "../Assets/ShahiPulao.jpg";
+import Rumali from "../Assets/Rumali.jpg";
+import UltaTawaParatha from "../Assets/UltaTawaParatha.jpg";
+import WarqiParatha from "../Assets/WarqiParatha.jpg";
+import TandooriRoti from "../Assets/TandooriRoti.jpg";
+import KhameeriRoti from "../Assets/KhameeriRoti.jpg";
+import Taaftan from "../Assets/Taaftan.jpg";
 
-export default {
+const images = {
   bg,
   chef,
   TE,
@@ -87,3 +87,5 @@ export default {
   KhameeriRoti,
   Taaftan
 };
+
+export default images;
